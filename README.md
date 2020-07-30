@@ -8,6 +8,10 @@ Your first job is to begin the design of a new virtual CPU, called the _G-machin
 
 You will be developing a Go library which implements the G-machine. Users should be able to import your library and use it to write programs which run on the G-machine. We will develop a minimum viable product first, and gradually add more features as we go.
 
+> No clue what a library is, no worries. For now you can think of it in the same way as your local library. Essentially, a library is a collection of information that are organized in such a way that makes it easy to locate and retrieve. Information is represented through books, and pages are the common interface for how the information is read. A computer or software  library is similar, it is a collection of organized procedures used to process information (books) that programmers use to build software. 
+
+<!--stopping here...I think you get the gist of the analogy I was trying for--> 
+
 We will be using a simplified model of a computer system in which there are three main components:
 
 * A _CPU_ (Central Processing Unit) which executes instructions in sequence and has _registers_ which store data while it's being processed
@@ -26,6 +30,8 @@ The test is already written for you, in the file [gmachine_test.go](gmachine_tes
 **TASK:** Write the minimum code to make the test pass. Use the [gmachine.go](gmachine.go) file which has been started for you.
 
 (Hint: create a `struct` type to represent the G-machine, with a `uint64` field representing the P register, and a `[]uint64` field representing the memory. Make sure to initialize this slice to the required length, or the test will fail. The `New()` function should return a pointer to this `struct` type.)
+
+<!--also give a hint on which library they should look at??-->
 
 When the test passes, go on to the next section.
 
