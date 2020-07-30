@@ -5,7 +5,7 @@ package gmachine
 // allocated to a new G-machine by default.
 const DefaultMemSize = 1024
 
-type Mem struct {
+type Machine struct {
 	P      uint64
 	Memory []uint64
 }
